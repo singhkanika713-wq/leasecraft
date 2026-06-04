@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lease Craft | Retail Solutions & Commercial Property Consultants</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--black:#111111;
+--dark:#2a2a2a;
+--gray:#666666;
+--light:#f5f5f5;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#fff;
+color:#222;
+}
+
+header{
+background:var(--black);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-family:'Montserrat',sans-serif;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:850px;
+color:white;
+}
+
+.hero h1{
+font-size:65px;
+font-family:'Montserrat',sans-serif;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:28px;
+font-weight:400;
+margin-bottom:20px;
+color:#ddd;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#d9d9d9;
+}
+
+.section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+font-family:'Montserrat',sans-serif;
+margin-bottom:50px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+font-family:'Montserrat',sans-serif;
+}
+
+.why{
+background:var(--light);
+}
+
+.features{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:20px;
+border-radius:10px;
+font-weight:500;
+}
+
+.contact{
+background:#111;
+color:white;
+}
+
+.contact-container{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-info p{
+margin-bottom:15px;
+line-height:1.7;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+font-family:Poppins;
+}
+
+form button{
+width:100%;
+padding:14px;
+border:none;
+background:white;
+color:black;
+font-weight:600;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.float-buttons{
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+z-index:999;
+}
+
+.float-buttons a{
+text-decoration:none;
+padding:14px 18px;
+border-radius:50px;
+font-weight:600;
+background:#111;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">LEASE CRAFT</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>LEASE CRAFT</h1>
+
+<h2>Retail Solutions & Commercial Property Consultants</h2>
+
+<p>
+Helping retailers, brands, investors and property owners
+find the right commercial spaces for long-term growth.
+</p>
+
+<a href="tel:+919198640077" class="btn">Call Now</a>
+
+<a href="#contact" class="btn">Get Consultation</a>
+
+</div>
+
+</section>
+
+<section id="about" class="section">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<p>
+
+Lease Craft specializes in retail leasing, commercial property consulting,
+site acquisition, tenant representation, landlord advisory and business
+expansion planning.
+
+We help brands secure premium locations while assisting property owners
+in finding quality tenants through strategic leasing solutions.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="services" class="section">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Retail Leasing</h3>
+<p>Finding ideal retail spaces for brands and growing businesses.</p>
+</div>
+
+<div class="card">
+<h3>Commercial Consulting</h3>
+<p>Professional guidance on commercial property decisions.</p>
+</div>
+
+<div class="card">
+<h3>Site Acquisition</h3>
+<p>Location scouting and market analysis for expansion.</p>
+</div>
+
+<div class="card">
+<h3>Tenant Representation</h3>
+<p>Negotiating favorable lease terms and premium locations.</p>
+</div>
+
+<div class="card">
+<h3>Landlord Representation</h3>
+<p>Helping property owners secure quality tenants.</p>
+</div>
+
+<div class="card">
+<h3>Market Expansion</h3>
+<p>Strategic planning for retailers entering new markets.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="why" class="section why">
+
+<h2 class="title">Why Choose Lease Craft?</h2>
+
+<div class="features">
+
+<div class="feature">✓ Extensive Local Market Knowledge</div>
+
+<div class="feature">✓ Professional Leasing Expertise</div>
+
+<div class="feature">✓ Retailer & Landlord Network</div>
+
+<div class="feature">✓ Transparent Advisory Services</div>
+
+<div class="feature">✓ End-to-End Leasing Support</div>
+
+<div class="feature">✓ Client-Focused Approach</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<p><strong>Lease Craft</strong></p>
+
+<p>
+H.N. 14, Ground Floor,<br>
+B/H Kavita Public School,<br>
+Surendra Nagar,<br>
+Lucknow (UP) 226028,<br>
+India
+</p>
+
+<p>📞 +91 9198640077</p>
+
+<p>✉ gaurav.leasecraft@gmail.com</p>
+
+</div>
+
+<div>
+
+<form onsubmit="submitForm(event)">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Your Requirement" required></textarea>
+
+<button type="submit">Send Inquiry</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Lease Craft. All Rights Reserved.
+
+</footer>
+
+<div class="float-buttons">
+
+<a href="tel:+919198640077">📞 Call</a>
+
+<a href="https://wa.me/919198640077" target="_blank">💬 WhatsApp</a>
+
+</div>
+
+<script>
+
+function submitForm(e){
+
+e.preventDefault();
+
+alert(
+"Thank you for contacting Lease Craft. Our team will get in touch with you shortly."
+);
+
+e.target.reset();
+
+}
+
+</script>
+
+</body>
+</html>
